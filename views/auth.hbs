@@ -1,0 +1,47 @@
+<section class="auth wrap">
+    <div class="form__reg">
+        <h2>Регистрация</h2>
+        <form action="/reg" method="POST">
+            <div class="email__pass">
+                <label for="">Введите Email:</label><input type="email" placeholder="Email" name="email" minlength="4"
+                    required value="{{data.email}}">
+                <label for="">Введите пароль:</label><input type="password" placeholder="пароль" name="password"
+                    minlength="8" required value="{{data.password}}">
+                <label for="">Повторите пароль:</label><input type="password" placeholder="повторите пароль"
+                    name="confirm" minlength="8" required>
+                <label for="">Введите имя:</label><input type="text" placeholder="имя" name="name" minlength="2"
+                    maxlength="28" required>
+                {{#if loginError}}
+                <p id="errortext">{{loginError}}</p>
+                {{/if}}
+            </div>
+            <button class="regbtn" type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <div class="form__auth">
+        <h2>Авторизация</h2>
+        <form action="/auth" method="POST">
+            <div class="email__pass">
+                <label for="">Введите Email:</label> <input type="email" placeholder="Email" name="email" minlength="4"
+                    required value="{{data.emaili}}">
+                <label for="">Введите пароль:</label> <input type="password" placeholder="пароль" name="password"
+                    minlength="8" required>
+                {{#if loginErrori}}
+                <p id="errortext">{{loginErrori}}</p>
+                {{/if}}
+            </div>
+            <button class="inbtn" type="submit">Войти</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="footer__container wrap">
+        <div class="logo__company">
+            <img src="/img/logo_company.png" alt="logo">
+        </div>
+        <div class="all__rights">
+            <p>Все права защищены &copy</p>
+        </div>
+    </div>
+</footer>

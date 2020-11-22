@@ -1,0 +1,123 @@
+header {
+    background: #FFFFFF;
+    box-shadow: 0px 11px 23px -7px rgba(0, 0, 0, 0.15);
+    height: 113px;
+    max-width: 100%;
+}
+
+.header__content {
+    max-width: 1170px;
+    padding: 0;
+    height: 113px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.header__content .header__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__content .header__left .logo {
+    margin-right: 43px;
+}
+
+.header__content .header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 29%;
+}
+
+.header__content .header__right ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 168px;
+}
+a {
+    position: relative;   
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #FFB800;
+    bottom: -5px;
+    left: 50%;
+    transition: all 300ms ease;
+}
+
+a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+#out {
+    background: rgb(255, 124, 124);
+}
+
+.tell {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.tell::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1.5em;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+	transform: translateX(-1em) skewX(-45deg);
+	animation: move-light 3s infinite ease-in-out;
+}
+
+
+@keyframes move-light {
+	from {
+		transform: translateX(-4em) skewX(-45deg);
+	}
+
+	to {
+		transform: translateX(25em) skewX(-45deg);
+	}
+}
+
+.button__sign:active {
+    transform: translate(3px, 3px);
+}
+
+.button__sign a {
+    font-weight: 500;
+    color: #fff !important;
+    padding: 0;
+    font-size: 14px;
+    height: 42px;
+    background: #FFB800;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 300ms ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0 10px;
+
+}
+
+.button__sign a:hover {
+    color: #FFB800 !important;
+    border: 2px solid #FFB800;
+    background: #fff !important;
+}

@@ -1,0 +1,48 @@
+<section class="main wrap">
+    <div class="main__info">
+        <h2>Текущие проблемы города:</h2>
+        <button class="tell"><a id="uniqlink" href="/create">Рассказать о проблеме</a></button>
+    </div>
+    <div class="notes">
+        {{#if items}}
+        {{#each items}}
+        <div class="note">
+            <div class="pic">
+                <img class="bg__note" src="{{img}}" alt="picture">
+            </div>
+            <div class="note__description">
+                <div class="theme">
+                    <h2>{{postTitle}}</h2>
+                </div>
+                <div class="small__text">
+                    <p>{{smallTxt}}</p>
+                </div>
+                <div class="user__info">
+                    <div class="user">
+                        <div class="ava">
+                            <img src="{{userAva}}" alt="user avatar">
+                        </div>
+                        <h3>{{userName}}</h3>
+                    </div>
+                    <div class="like">
+                        <span>{{like}}</span>
+                        <img src="/img/heartlike.svg" width="30px" alt="heartlike">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        {{else}}
+        <h1 class="no__reviews">Пока тут пусто :(</h1>
+        {{/if}}
+</section>
+<footer>
+    <div class="footer__container wrap">
+        <div class="logo__company">
+            <img src="/img/logo_company.png" alt="logo">
+        </div>
+        <div class="all__rights">
+            <p>Все права защищены &copy</p>
+        </div>
+    </div>
+</footer>

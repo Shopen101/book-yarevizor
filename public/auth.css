@@ -1,0 +1,101 @@
+.auth {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.form__reg,
+.form__auth {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    width: 500px;
+    padding: 20px;
+}
+
+.email__pass {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+label {
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 16px;
+    padding: 3px 5px;
+    color: rgb(102, 102, 102)
+}
+
+input:focus {
+    border-bottom: 2px solid rgb(255, 199, 114);
+}
+
+button.regbtn {
+    margin: 20px auto 0;
+    display: block;
+    border: 2px solid rgb(139, 255, 116);
+    padding: 5px 10px;
+    color: #fff;
+    background: rgb(139, 255, 116);
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+button.regbtn:hover {
+    border: 2px solid rgb(139, 255, 116);
+    color: rgb(139, 255, 116);
+    background: rgb(255, 255, 255);
+}
+
+button.regbtn:active {
+    transform: translate(-3px, -3px);
+}
+
+
+button.inbtn {
+    margin: 20px auto 0;
+    display: block;
+    border: 2px solid rgb(136, 183, 255);
+    padding: 5px 10px;
+    color: #fff;
+    background: rgb(136, 183, 255);
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+button.inbtn:hover {
+    border: 2px solid rgb(136, 183, 255);
+    color: rgb(136, 183, 255);
+    background: rgb(255, 255, 255);
+}
+
+button.inbtn:active {
+    transform: translate(-3px, -3px);
+}
+
+footer {
+    margin-top: 60px;
+}
+
+#errortext {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 111, 111);
+    border-radius: 8px;
+    padding: 6px 10px;
+}

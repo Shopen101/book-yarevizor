@@ -1,0 +1,24 @@
+<h2>Создать пост</h2>
+<section class="wrap create">
+    <form action="/create" method="POST" enctype="multipart/form-data">
+        <div class="inputs">
+            <label for="">Заголовок:</label><input type="text" required name="title">
+            <label for="">Краткое описание(не > 210 символов):</label><textarea maxlength="140" name="smalltxt"
+                id="smalltxt" cols="30" rows="10" required></textarea>
+            <label for="">Полное описание:</label><textarea name="fulltxt" id="fulltxt" cols="30" rows="10"
+                required></textarea>
+            <label for="">Фотография поста:</label><input type="file" name="photopost" required><br>
+        </div>
+        <button type="submit" class="create-btn">Создать пост</button>
+    </form>
+</section>
+<footer>
+    <div class="footer__container wrap">
+        <div class="logo__company">
+            <img src="/img/logo_company.png" alt="logo">
+        </div>
+        <div class="all__rights">
+            <p>Все права защищены &copy</p>
+        </div>
+    </div>
+</footer>

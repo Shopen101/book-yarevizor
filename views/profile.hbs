@@ -1,0 +1,29 @@
+<section class="main wrap">
+    <div class="main__info">
+        <h2>Ваш профиль:</h2>
+    </div>
+    <div class="data__user__info">
+        <div class="avatar">
+            <img id="user__ava" src="{{data.userImg}}" alt="ava">
+        </div>
+        <div class="name">
+            <p class="user__name">{{data.userName}}</p>
+        </div>
+        <form action="/profile/change" method="POST" enctype="multipart/form-data">
+            <label for="">Фотография профиля:</label><input type="file" name="photopost" required><br>
+            <button type="submit" class="create-btn">Изменить фото</button>
+        </form>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer__container wrap">
+        <div class="logo__company">
+            <img src="/img/logo_company.png" alt="logo">
+        </div>
+        <div class="all__rights">
+            <p>Все права защищены &copy</p>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,26 @@
+<header>
+    <div class="header__content">
+        <div class="header__left">
+            <div class="logo">
+                <a href="#"><img src="img/LogoSite.png" alt="logo"></a>
+            </div>
+            <div class="tagline">
+                <h1>Голос твоего города!</h1>
+            </div>
+        </div>
+
+        <div class="header__right">
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/profile">Профиль</a></li>
+            </ul>
+            <div class="button__sign">
+                {{#if isAuth}}
+                <a id="out" href="/logout">Выход</a>                
+                {{else}}
+                <a href="/auth">Вход/регистрация</a>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</header>

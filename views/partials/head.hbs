@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+    {{#if isMain}}
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/mainfooter.css">
+    {{/if}}
+
+    {{#if isProfile}}
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/mainfooter.css">
+    <link rel="stylesheet" href="/auth.css">
+    <link rel="stylesheet" href="/create.css">
+    <link rel="stylesheet" href="/profile.css">
+    {{/if}}
+
+    {{#if isAuthUser}}
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/mainfooter.css">
+    <link rel="stylesheet" href="/auth.css">
+    {{/if}}
+
+    {{#if isCreate}}
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/mainfooter.css">
+    <link rel="stylesheet" href="/auth.css">
+    <link rel="stylesheet" href="/create.css">
+    {{/if}}
+    <title>{{title}}</title>
+</head>
