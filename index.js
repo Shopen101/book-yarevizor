@@ -10,10 +10,10 @@ const mongoose = require('mongoose')
 const session = require('express-session')
 const MongoStore = require('connect-mongodb-session')(session)
 const varMiddleware = require('./middleware/variables')
-const userMiddleware = require('./middleware/user')
 const keys = require('./keys')
 const flash = require('connect-flash')
 const fileMiddleware = require('./middleware/file')
+const post = require('./routes/post')
 
 const Handlebars = require('handlebars')
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
@@ -51,7 +51,6 @@ app.use(fileMiddleware.single('photopost'))
 
 //роуты
 app.use(varMiddleware)
-// app.use(userMiddleware)
 app.use(compression())
 
 app.use(express.json())
@@ -62,8 +61,7 @@ app.use('/', mainRoutes)
 app.use(registerRoutes)
 app.use('/create', createRoutes)
 app.use('/profile', profileRoutes)
-
-// app.use('/profile', profileRoutes)
+app.use('/', post)
 
 const PORT = process.env.PORT || 3000 
 

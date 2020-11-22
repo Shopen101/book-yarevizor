@@ -1,7 +1,5 @@
 const { Router } = require('express')
 const authCheck = require('../middleware/auth')
-const { textAreaValidators } = require('../utils/validators')
-const { validationResult } = require('express-validator')
 const Posts = require('../models/posts')
 const User = require('../models/user')
 const router = Router()

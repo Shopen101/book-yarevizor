@@ -1,0 +1,41 @@
+<section class="main wrap">
+    <div class="notes">
+        <div class="note">
+            <div class="pic">
+                <img class="bg__note" src="{{items.img}}" alt="picture">
+            </div>
+            <div class="note__description">
+                <div class="theme">
+                    <h2>{{items.postTitle}}</h2>
+                </div>
+                <div class="small__text">
+                    <p>{{items.smallTxt}}</p>
+                </div>
+                  <div class="small__text">
+                    <p>{{items.fullTxt}}</p>
+                </div>
+                <div class="user__info">
+                    <div class="user">
+                        <div class="ava">
+                            <img src="{{items.userAva}}" alt="user avatar">
+                        </div>
+                        <h3>{{items.userName}}</h3>
+                    </div>
+                    <div class="like">
+                        <span class="likecount" data-id="{{items._id}}">{{items.like}}</span>
+                        <img class="likeClick" src="/img/heartlike.svg" width="30px" alt="heartlike" data-id="{{items._id}}" data-like="{{items.like}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<footer>
+    <div class="footer__container wrap">
+        <div class="logo__company">
+            <img src="/img/logo_company.png" alt="logo">
+        </div>
+        <div class="all__rights">
+            <p>Все права защищены &copy</p>
+        </div>
+    </div>
+</footer>

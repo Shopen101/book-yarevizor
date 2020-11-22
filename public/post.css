@@ -1,0 +1,12 @@
+.notes {
+    justify-content: center;
+}
+
+.note {
+    width: 800px;
+    height: calc(100% - 200px);
+}
+
+.pic {
+    width: 800px;
+}

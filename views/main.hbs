@@ -11,8 +11,8 @@
                 <img class="bg__note" src="{{img}}" alt="picture">
             </div>
             <div class="note__description">
-                <div class="theme">
-                    <h2>{{postTitle}}</h2>
+                <div class="theme" data-id="{{_id}}">
+                    <a href="/{{_id}}" class="click__theme"><h2>{{postTitle}}</h2></a>
                 </div>
                 <div class="small__text">
                     <p>{{smallTxt}}</p>
@@ -25,8 +25,8 @@
                         <h3>{{userName}}</h3>
                     </div>
                     <div class="like">
-                        <span>{{like}}</span>
-                        <img src="/img/heartlike.svg" width="30px" alt="heartlike">
+                        <span class="likecount" data-id="{{_id}}">{{like}}</span>
+                        <img class="likeClick" src="/img/heartlike.svg" width="30px" alt="heartlike" data-id="{{_id}}" data-like="{{like}}">
                     </div>
                 </div>
             </div>
