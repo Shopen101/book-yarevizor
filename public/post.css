@@ -10,3 +10,16 @@
 .pic {
     width: 800px;
 }
+
+.small__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #6C6C6C;
+    height: 170px;
+    width: auto !important;
+}
+
+.small__text p {  
+    width: auto !important;
+}
