@@ -2,8 +2,8 @@
 
 ## Стэк:
 
-### * Frontend:
+### Frontend:
 * HTML, CSS, JS
-* 
+* Handlebars
 
 Hackathon app.
