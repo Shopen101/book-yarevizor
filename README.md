@@ -2,8 +2,19 @@
 
 ## Стэк:
 
-### Frontend:
+### FrontEnd:
 * HTML, CSS, JS
 * Handlebars
 
-Hackathon app.
+### BackEnd:
+*  Node.JS
+*  ExpressJS
+*  MongoDB / NoSQL
+*  Mongoose
+*  bcryptjs
+*  connect-flash
+*  csurf
+*  express-validator
+*  multer
+  
+Hackathon application.
